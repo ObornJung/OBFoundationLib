@@ -17,8 +17,6 @@
 		37DF40C91C113FEC003BA8F9 /* NSObject+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DF40BD1C113FEC003BA8F9 /* NSObject+OBExtend.m */; };
 		37DF40CA1C113FEC003BA8F9 /* NSString+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DF40BE1C113FEC003BA8F9 /* NSString+OBExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37DF40CB1C113FEC003BA8F9 /* NSString+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DF40BF1C113FEC003BA8F9 /* NSString+OBExtend.m */; };
-		37DF40CC1C113FEC003BA8F9 /* UIFont+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DF40C01C113FEC003BA8F9 /* UIFont+OBExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37DF40CD1C113FEC003BA8F9 /* UIFont+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DF40C11C113FEC003BA8F9 /* UIFont+OBExtend.m */; };
 		37DF40D21C11402F003BA8F9 /* UIApplication+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DF40CE1C11402F003BA8F9 /* UIApplication+OBExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37DF40D31C11402F003BA8F9 /* UIApplication+OBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DF40CF1C11402F003BA8F9 /* UIApplication+OBExtend.m */; };
 		37DF40D41C11402F003BA8F9 /* UIDevice+OBExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DF40D01C11402F003BA8F9 /* UIDevice+OBExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,8 +49,6 @@
 		37DF40BD1C113FEC003BA8F9 /* NSObject+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OBExtend.m"; path = "SystemExtend/NSObject+OBExtend.m"; sourceTree = "<group>"; };
 		37DF40BE1C113FEC003BA8F9 /* NSString+OBExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+OBExtend.h"; path = "SystemExtend/NSString+OBExtend.h"; sourceTree = "<group>"; };
 		37DF40BF1C113FEC003BA8F9 /* NSString+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+OBExtend.m"; path = "SystemExtend/NSString+OBExtend.m"; sourceTree = "<group>"; };
-		37DF40C01C113FEC003BA8F9 /* UIFont+OBExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+OBExtend.h"; path = "SystemExtend/UIFont+OBExtend.h"; sourceTree = "<group>"; };
-		37DF40C11C113FEC003BA8F9 /* UIFont+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+OBExtend.m"; path = "SystemExtend/UIFont+OBExtend.m"; sourceTree = "<group>"; };
 		37DF40CE1C11402F003BA8F9 /* UIApplication+OBExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+OBExtend.h"; path = "SystemExtend/UIApplication+OBExtend.h"; sourceTree = "<group>"; };
 		37DF40CF1C11402F003BA8F9 /* UIApplication+OBExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+OBExtend.m"; path = "SystemExtend/UIApplication+OBExtend.m"; sourceTree = "<group>"; };
 		37DF40D01C11402F003BA8F9 /* UIDevice+OBExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+OBExtend.h"; path = "SystemExtend/UIDevice+OBExtend.h"; sourceTree = "<group>"; };
@@ -97,8 +93,6 @@
 				37DF40D11C11402F003BA8F9 /* UIDevice+OBExtend.m */,
 				37DF40CE1C11402F003BA8F9 /* UIApplication+OBExtend.h */,
 				37DF40CF1C11402F003BA8F9 /* UIApplication+OBExtend.m */,
-				37DF40C01C113FEC003BA8F9 /* UIFont+OBExtend.h */,
-				37DF40C11C113FEC003BA8F9 /* UIFont+OBExtend.m */,
 				37DF40B81C113FEC003BA8F9 /* NSDate+OBExtend.h */,
 				37DF40B91C113FEC003BA8F9 /* NSDate+OBExtend.m */,
 				37DF40B61C113FEC003BA8F9 /* NSArray+OBExtend.h */,
@@ -223,7 +217,6 @@
 				37DF40C41C113FEC003BA8F9 /* NSDate+OBExtend.h in Headers */,
 				37FEC9F11C116E7F0033B8C4 /* OBEncodeMacro.h in Headers */,
 				37DF40C81C113FEC003BA8F9 /* NSObject+OBExtend.h in Headers */,
-				37DF40CC1C113FEC003BA8F9 /* UIFont+OBExtend.h in Headers */,
 				37DF40C21C113FEC003BA8F9 /* NSArray+OBExtend.h in Headers */,
 				7A708450199B5B4D007FB8B1 /* OBFoundationLib-Prefix.pch in Headers */,
 				37FEC9F51C116F4B0033B8C4 /* OBMoudle.h in Headers */,
@@ -327,7 +320,6 @@
 				37DF40C91C113FEC003BA8F9 /* NSObject+OBExtend.m in Sources */,
 				37DF40D51C11402F003BA8F9 /* UIDevice+OBExtend.m in Sources */,
 				37DF40D31C11402F003BA8F9 /* UIApplication+OBExtend.m in Sources */,
-				37DF40CD1C113FEC003BA8F9 /* UIFont+OBExtend.m in Sources */,
 				37DF40C51C113FEC003BA8F9 /* NSDate+OBExtend.m in Sources */,
 				37DF40CB1C113FEC003BA8F9 /* NSString+OBExtend.m in Sources */,
 				37FEC9DF1C116B840033B8C4 /* OBFileManager.m in Sources */,

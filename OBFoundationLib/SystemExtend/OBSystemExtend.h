@@ -14,7 +14,6 @@
 #import "UIApplication+OBExtend.h"
 
 #import "NSDate+OBExtend.h"
-#import "UIFont+OBExtend.h"
 #import "NSArray+OBExtend.h"
 #import "NSObject+OBExtend.h"
 #import "NSString+OBExtend.h"
