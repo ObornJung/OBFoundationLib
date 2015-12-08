@@ -135,7 +135,7 @@ static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMon
     NSDateComponents *components2 = [[NSCalendar currentCalendar] components:kDateComponents fromDate:date];
     
     // Must be same week. 12/31 and 1/1 will both be week "1" if they are in the same week
-    if ([components1 week] != [components2 week])
+    if ([components1 weekOfYear] != [components2 weekOfYear])
     {
         return NO;
     }
@@ -264,7 +264,7 @@ static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMon
 - (NSInteger)week
 {
     NSDateComponents *components = [[NSCalendar currentCalendar] components:kDateComponents fromDate:self];
-    return [components week];
+    return [components weekOfYear];
 }
 
 - (NSInteger)weekday
