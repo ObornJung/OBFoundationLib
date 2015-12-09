@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7A708446199B5B4D007FB8B1"
+               BlueprintIdentifier = "373953491C18060A007BB2D9"
                BuildableName = "OBFoundationLib.framework"
                BlueprintName = "OBFoundationLib"
                ReferencedContainer = "container:OBFoundationLib.xcodeproj">
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "373953531C18060A007BB2D9"
+               BuildableName = "OBFoundationLibTests.xctest"
+               BlueprintName = "OBFoundationLibTests"
+               ReferencedContainer = "container:OBFoundationLib.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "373953491C18060A007BB2D9"
+            BuildableName = "OBFoundationLib.framework"
+            BlueprintName = "OBFoundationLib"
+            ReferencedContainer = "container:OBFoundationLib.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7A708446199B5B4D007FB8B1"
+            BlueprintIdentifier = "373953491C18060A007BB2D9"
             BuildableName = "OBFoundationLib.framework"
             BlueprintName = "OBFoundationLib"
             ReferencedContainer = "container:OBFoundationLib.xcodeproj">
@@ -63,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7A708446199B5B4D007FB8B1"
+            BlueprintIdentifier = "373953491C18060A007BB2D9"
             BuildableName = "OBFoundationLib.framework"
             BlueprintName = "OBFoundationLib"
             ReferencedContainer = "container:OBFoundationLib.xcodeproj">

@@ -108,15 +108,15 @@ static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMon
 
 - (BOOL)isNextYear
 {
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:[NSDate date]];
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
     return ([components1 year] == ([components2 year] + 1));
 }
 
 - (BOOL)isLastYear
 {
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:[NSDate date]];
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
     return ([components1 year] == ([components2 year] - 1));
 }
 
@@ -150,15 +150,15 @@ static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMon
     {
         return NO;
     }
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSMonthCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSMonthCalendarUnit fromDate:aDate];
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:self];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:aDate];
     return ([components1 month] == [components2 month]);
 }
 
 - (BOOL)isSameYearWithDate:(NSDate *)date
 {
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:date];
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:self];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:date];
     return ([components1 year] == [components2 year]);
 }
 
@@ -227,7 +227,7 @@ static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMon
 {
     NSTimeInterval interval = [[NSDate date] timeIntervalSinceReferenceDate] + kSecondsPerHour * 0.5;
     NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:interval];
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSHourCalendarUnit fromDate:date];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitHour fromDate:date];
     return [components hour];
 }
 
