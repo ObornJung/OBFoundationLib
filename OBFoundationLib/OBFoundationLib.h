@@ -9,6 +9,8 @@
 #ifndef OBFoundationLib_h
 #define OBFoundationLib_h
 
+#import <Foundation/Foundation.h>
+
 //! Project version number for OBFoundationLib.
 FOUNDATION_EXPORT double OBFoundationLibVersionNumber;
 
