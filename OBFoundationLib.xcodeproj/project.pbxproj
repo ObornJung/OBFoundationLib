@@ -34,7 +34,7 @@
 		373953961C18076E007BB2D9 /* OBLogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 373953941C18076E007BB2D9 /* OBLogFile.m */; };
 		373953981C180775007BB2D9 /* OBMoudle.h in Headers */ = {isa = PBXBuildFile; fileRef = 373953971C180775007BB2D9 /* OBMoudle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3739539C1C1807A4007BB2D9 /* OBOpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3739539A1C1807A4007BB2D9 /* OBOpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3739539D1C1807A4007BB2D9 /* OBOpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3739539B1C1807A4007BB2D9 /* OBOpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3739539D1C1807A4007BB2D9 /* OBOpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3739539B1C1807A4007BB2D9 /* OBOpenUDID.m */; };
 		373953A11C1807CA007BB2D9 /* OBFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3739539F1C1807CA007BB2D9 /* OBFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		373953A21C1807CA007BB2D9 /* OBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 373953A01C1807CA007BB2D9 /* OBFileManager.m */; };
 		373953A61C18085F007BB2D9 /* OBFoundationLib-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 373953A41C18085F007BB2D9 /* OBFoundationLib-Prefix.pch */; };
