@@ -38,6 +38,7 @@
 		373953A11C1807CA007BB2D9 /* OBFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3739539F1C1807CA007BB2D9 /* OBFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		373953A21C1807CA007BB2D9 /* OBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 373953A01C1807CA007BB2D9 /* OBFileManager.m */; };
 		373953A61C18085F007BB2D9 /* OBFoundationLib-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 373953A41C18085F007BB2D9 /* OBFoundationLib-Prefix.pch */; };
+		37FD9F461C2260FE002339BF /* OBFoundationLib.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 37FD9F451C2260FE002339BF /* OBFoundationLib.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		373953A01C1807CA007BB2D9 /* OBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBFileManager.m; sourceTree = "<group>"; };
 		373953A31C18085F007BB2D9 /* OBFoundationLib-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OBFoundationLib-Info.plist"; sourceTree = "<group>"; };
 		373953A41C18085F007BB2D9 /* OBFoundationLib-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OBFoundationLib-Prefix.pch"; sourceTree = "<group>"; };
+		37FD9F451C2260FE002339BF /* OBFoundationLib.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OBFoundationLib.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				373953581C18060A007BB2D9 /* OBFoundationLibTests */,
 				373953641C18061D007BB2D9 /* Frameworks */,
 				3739534B1C18060A007BB2D9 /* Products */,
+				37FD9F451C2260FE002339BF /* OBFoundationLib.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -342,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37FD9F461C2260FE002339BF /* OBFoundationLib.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
