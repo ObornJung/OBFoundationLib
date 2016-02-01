@@ -11,6 +11,7 @@
 
 #import "OBLogFile.h"
 #import "OBOpenUDID.h"
+#import "TTBaseModel.h"
 #import "OBFileManager.h"
 
 #endif /* OBMoudle_h */

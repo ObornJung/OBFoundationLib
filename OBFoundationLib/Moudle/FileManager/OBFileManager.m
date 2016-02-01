@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 ATG Inc. All rights reserved.
 //
 
+#import "OBToolsMacro.h"
+#import "OBSystemExtend.h"
 #import "OBFileManager.h"
 
 @interface OBFileManager()

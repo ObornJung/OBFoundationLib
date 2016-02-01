@@ -10,6 +10,8 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import "OBOpenUDID.h"
+#import "OBToolsMacro.h"
+#import "OBSystemExtend.h"
 
 @implementation UIDevice (OBExtend)
 

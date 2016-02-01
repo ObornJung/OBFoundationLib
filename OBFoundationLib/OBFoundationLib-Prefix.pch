@@ -8,7 +8,4 @@
 
 #ifdef __OBJC__
 
-#import "OBToolsMacro.h"
-#import "OBSystemExtend.h"
-
 #endif

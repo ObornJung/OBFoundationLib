@@ -8,6 +8,8 @@
 
 #import "OBLogFile.h"
 #import "OBFileManager.h"
+#import "OBToolsMacro.h"
+#import "OBSystemExtend.h"
 
 @interface OBLogFile()
 
