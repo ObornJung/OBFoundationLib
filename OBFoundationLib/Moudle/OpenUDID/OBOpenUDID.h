@@ -48,8 +48,8 @@
 
 //
 // Usage:
-//    #include "OpenUDID.h"
-//    NSString* openUDID = [OpenUDID value];
+//    #include "OBOpenUDID.h"
+//    NSString * openUDID = [OBOpenUDID value];
 //
 
 #define kOBOpenUDIDErrorNone          0

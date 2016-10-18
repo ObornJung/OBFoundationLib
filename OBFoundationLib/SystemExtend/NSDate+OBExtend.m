@@ -15,9 +15,7 @@ static const NSUInteger kSecondsPerHour = 3600;
 static const NSUInteger kSecondsPerDay = 86400;
 static const NSUInteger kSecondsPerWeek = 604800;
 //static const NSUInteger kSecondsPerYear = 31556926;
-static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfYear |
-                                           NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday |
-                                           NSCalendarUnitWeekdayOrdinal);
+static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal);
 
 @implementation NSDate (OBExtend)
 

@@ -9,8 +9,8 @@
 #import <mach/mach.h>
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import "OBMacro.h"
 #import "OBOpenUDID.h"
-#import "OBToolsMacro.h"
 #import "OBSystemExtend.h"
 
 @implementation UIDevice (OBExtend)
@@ -64,7 +64,7 @@
     if (captureDeviceClass != nil) {
         
         AVCaptureDevice * avDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-        if ([avDevice hasTorch] && [avDevice hasFlash]){
+        if ([avDevice hasTorch] && [avDevice hasFlash]) {
             
             [avDevice lockForConfiguration:nil];
             if (on) {

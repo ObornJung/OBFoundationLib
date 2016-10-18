@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 ObornJung. All rights reserved.
 //
 
+#import "OBMacro.h"
 #import "OBLogFile.h"
 #import "OBFileManager.h"
-#import "OBToolsMacro.h"
 #import "OBSystemExtend.h"
 
 @interface OBLogFile()
@@ -33,6 +33,24 @@
         defaultLogFile = [[[self class] alloc] initWithPath:nil fileName:nil];
     });
     return defaultLogFile;
+}
+
++ (void)printUMUDID {
+    Class cls = NSClassFromString(@"UMANUtil");
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wundeclared-selector"
+#pragma clang diagnostic ignored"-Warc-performSelector-leaks"
+    SEL deviceIDSelector = @selector(openUDIDString);
+    NSString *deviceID = nil;
+    if(cls && [cls respondsToSelector:deviceIDSelector]){
+        deviceID = [cls performSelector:deviceIDSelector];
+    }
+#pragma clang diagnostic pop
+    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:@{@"oid" : deviceID}
+    options:NSJSONWritingPrettyPrinted
+    error:nil];
+
+    NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
 }
 
 + (instancetype)errorLogFile

@@ -10,13 +10,11 @@
 #ifndef OBSystemExtend_h
 #define OBSystemExtend_h
 
-#import "UIDevice+OBExtend.h"
-#import "UIApplication+OBExtend.h"
-
 #import "NSDate+OBExtend.h"
 #import "NSArray+OBExtend.h"
-#import "NSObject+OBExtend.h"
+#import "UIDevice+OBExtend.h"
 #import "NSString+OBExtend.h"
 #import "NSDictionary+OBExtend.h"
+#import "UIApplication+OBExtend.h"
 
 #endif /* OBSystemExtend_h */

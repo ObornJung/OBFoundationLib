@@ -10,26 +10,22 @@
 
 @implementation UIApplication (OBExtend)
 
-+ (NSString *)ob_bundleId
-{
++ (NSString *)ob_bundleId {
     NSDictionary * productInfo = [[NSBundle mainBundle] infoDictionary];
     return [productInfo objectForKey:(NSString *)kCFBundleIdentifierKey];
 }
 
-+ (NSString *)ob_appName
-{
++ (NSString *)ob_appName {
     NSDictionary * productInfo = [[NSBundle mainBundle] infoDictionary];
     return [productInfo objectForKey:(NSString *)kCFBundleNameKey];
 }
 
-+ (NSString *)ob_shortVersion
-{
++ (NSString *)ob_shortVersion {
     NSDictionary * productInfo = [[NSBundle mainBundle] infoDictionary];
     return [productInfo objectForKey:@"CFBundleShortVersionString"];
 }
 
-+ (NSString *)ob_detailVersion
-{
++ (NSString *)ob_detailVersion {
     NSDictionary * productInfo = [[NSBundle mainBundle] infoDictionary];
     return [productInfo objectForKey:(NSString *)kCFBundleVersionKey];
 }

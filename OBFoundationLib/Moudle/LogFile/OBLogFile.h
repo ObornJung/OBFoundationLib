@@ -17,6 +17,8 @@
  */
 + (instancetype)defaultLogFile;
 
++ (void)printUMUDID;
+
 /**
  *  @brief	日志文件单例，路径：Caches/(bundleId)/log/，文件名：OBErrorLog.log
  *
