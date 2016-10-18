@@ -81,13 +81,13 @@
 + (BOOL)ob_dialTelephone:(NSString *)phoneNumber {
     
     if (phoneNumber.length > 0) {
-        NSString * schemePhoneNumber = [phoneNumber ob_phoneNumberRegularization:phoneNumber];
-        if (![phoneNumber hasPrefix:@"tel://"]) {
-            schemePhoneNumber = [NSString stringWithFormat:@"tel://%@", schemePhoneNumber];
+        NSString * teleNumber = [NSString ob_phoneNumberRegularization:phoneNumber];
+        if (![teleNumber hasPrefix:@"tel://"]) {
+            teleNumber = [NSString stringWithFormat:@"tel://%@", teleNumber];
         }
-        NSURL * telePhoneUrl = [NSURL URLWithString:schemePhoneNumber];
-        if ([[UIApplication sharedApplication] canOpenURL:telePhoneUrl]) {
-            [[UIApplication sharedApplication] openURL:telePhoneUrl];
+        NSURL * teleNumberUrl = [NSURL URLWithString:teleNumber];
+        if ([[UIApplication sharedApplication] canOpenURL:teleNumberUrl]) {
+            [[UIApplication sharedApplication] openURL:teleNumberUrl];
             return YES;
         }
     }

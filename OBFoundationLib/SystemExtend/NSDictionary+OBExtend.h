@@ -16,7 +16,7 @@
  *
  *  @return 实例化的dictionary
  */
-+ (instancetype)ob_dictionaryWithJsonContentFile:(NSString *)fileName;
++ (instancetype)ob_dictionaryWithJsonFile:(NSString *)fileName;
 
 /**
  *  从jsonString中实例化一个dictionary

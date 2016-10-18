@@ -27,7 +27,7 @@
  *
  *  @return 处理后的string
  */
-- (NSString *)ob_phoneNumberRegularization:(NSString *)phoneNumber;
++ (NSString *)ob_phoneNumberRegularization:(NSString *)phoneNumber;
 
 /**
  *  计算字符串在给定的font和width需要的高度

@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (OBExtend)
 
-+ (instancetype)ob_dictionaryWithJsonContentFile:(NSString *)fileName {
++ (instancetype)ob_dictionaryWithJsonFile:(NSString *)fileName {
     if (fileName.length > 0) {
         NSString * filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@""];
         NSData * data = [NSData dataWithContentsOfFile:filePath];

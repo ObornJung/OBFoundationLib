@@ -26,14 +26,14 @@
     return  md5Str;
 }
 
-- (NSString *)ob_phoneNumberRegularization:(NSString *)phoneNumber {
++ (NSString *)ob_phoneNumberRegularization:(NSString *)phoneNumber {
     
-    NSString *result = nil;
-    result=[phoneNumber stringByReplacingOccurrencesOfString:@"<" withString:@""];
-    result=[result stringByReplacingOccurrencesOfString:@">" withString:@""];
-    result=[result stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    result=[result stringByReplacingOccurrencesOfString:@"+" withString:@""];
-    result=[result stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString * result = phoneNumber;
+    result = [result stringByReplacingOccurrencesOfString:@"<" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@">" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@"+" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@" " withString:@""];
     return  result;
 }
 
