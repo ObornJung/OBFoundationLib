@@ -17,11 +17,13 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "7.0"
     s.source       = { :git => "https://github.com/ObornJung/OBFoundationLib.git", :tag => s.version }
 
+    s.source_files = 'OBFoundationLib/*.{m,h}'
+    s.public_header_files = 'OBFoundationLib/*.h'
+
     s.subspec 'Macro' do |ss|
         ss.source_files = 'OBFoundationLib/Macro/**/*.{m,h}'
         ss.public_header_files = 'OBFoundationLib/Macro/**/*.h'
     end
-
 
     s.subspec 'Moudle' do |ss|
         ss.dependency 'OBFoundationLib/Macro'
