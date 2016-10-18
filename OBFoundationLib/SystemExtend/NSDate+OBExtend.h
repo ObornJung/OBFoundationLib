@@ -11,51 +11,51 @@
 @interface NSDate (OBExtend)
 
 // Relative dates from the current date
-+ (NSDate *)dateTomorrow;
-+ (NSDate *)dateYesterday;
-+ (NSDate *)dateWithDaysFromNow:(NSInteger)days;
-+ (NSDate *)dateWithDaysBeforeNow:(NSInteger)days;
-+ (NSDate *)dateWithHoursFromNow:(NSInteger)hours;
-+ (NSDate *)dateWithHoursBeforeNow:(NSInteger)hours;
-+ (NSDate *)dateWithMinutesFromNow:(NSInteger)minutes;
-+ (NSDate *)dateWithMinutesBeforeNow:(NSInteger)minutes;
++ (NSDate *)ob_dateTomorrow;
++ (NSDate *)ob_dateYesterday;
++ (NSDate *)ob_dateWithDaysFromNow:(NSInteger)days;
++ (NSDate *)ob_dateWithDaysBeforeNow:(NSInteger)days;
++ (NSDate *)ob_dateWithHoursFromNow:(NSInteger)hours;
++ (NSDate *)ob_dateWithHoursBeforeNow:(NSInteger)hours;
++ (NSDate *)ob_dateWithMinutesFromNow:(NSInteger)minutes;
++ (NSDate *)ob_dateWithMinutesBeforeNow:(NSInteger)minutes;
 
 // Comparing dates
-- (BOOL)isToday;
-- (BOOL)isTomorrow;
-- (BOOL)isYesterday;
-- (BOOL)isThisWeek;
-- (BOOL)isNextWeek;
-- (BOOL)isLastWeek;
-- (BOOL)isThisYear;
-- (BOOL)isNextYear;
-- (BOOL)isLastYear;
-- (BOOL)isSameDayWithDate:(NSDate *)date;
-- (BOOL)isSameWeekWithDate:(NSDate *)date;
-- (BOOL)isSameMonthWithDate:(NSDate *)aDate;
-- (BOOL)isSameYearWithDate:(NSDate *)date;
-- (BOOL)isEarlierThanDate:(NSDate *)date;
-- (BOOL)isLaterThanDate:(NSDate *)date;
+- (BOOL)ob_isToday;
+- (BOOL)ob_isTomorrow;
+- (BOOL)ob_isYesterday;
+- (BOOL)ob_isThisWeek;
+- (BOOL)ob_isNextWeek;
+- (BOOL)ob_isLastWeek;
+- (BOOL)ob_isThisYear;
+- (BOOL)ob_isNextYear;
+- (BOOL)ob_isLastYear;
+- (BOOL)ob_isSameDayWithDate:(NSDate *)ob_date;
+- (BOOL)ob_isSameWeekWithDate:(NSDate *)ob_date;
+- (BOOL)ob_isSameMonthWithDate:(NSDate *)aDate;
+- (BOOL)ob_isSameYearWithDate:(NSDate *)ob_date;
+- (BOOL)ob_isEarlierThanDate:(NSDate *)ob_date;
+- (BOOL)ob_isLaterThanDate:(NSDate *)ob_date;
 
 // Adjusting dates
-- (NSDate *)dateByAddingDays:(NSInteger)days;
-- (NSDate *)dateBySubtractingDays:(NSInteger)days;
-- (NSDate *)dateByAddingHours:(NSInteger)hours;
-- (NSDate *)dateBySubtractingHours:(NSInteger)hours;
-- (NSDate *)dateByAddingMinutes:(NSInteger)minutes;
-- (NSDate *)dateBySubtractingMinutes:(NSInteger)minutes;
-- (NSDate *)dateAtStartOfDay;
+- (NSDate *)ob_dateByAddingDays:(NSInteger)days;
+- (NSDate *)ob_dateBySubtractingDays:(NSInteger)days;
+- (NSDate *)ob_dateByAddingHours:(NSInteger)hours;
+- (NSDate *)ob_dateBySubtractingHours:(NSInteger)hours;
+- (NSDate *)ob_dateByAddingMinutes:(NSInteger)minutes;
+- (NSDate *)ob_dateBySubtractingMinutes:(NSInteger)minutes;
+- (NSDate *)ob_dateAtStartOfDay;
 
 // Decomposing dates
-@property (readonly) NSInteger nearestHour;
-@property (readonly) NSInteger hour;
-@property (readonly) NSInteger minute;
-@property (readonly) NSInteger seconds;
-@property (readonly) NSInteger day;
-@property (readonly) NSInteger month;
-@property (readonly) NSInteger week;
-@property (readonly) NSInteger weekday;
-@property (readonly) NSInteger nthWeekday; // e.g. 2nd Tuesday of the month == 2
-@property (readonly) NSInteger year;
+@property (readonly) NSInteger ob_nearestHour;
+@property (readonly) NSInteger ob_hour;
+@property (readonly) NSInteger ob_minute;
+@property (readonly) NSInteger ob_seconds;
+@property (readonly) NSInteger ob_day;
+@property (readonly) NSInteger ob_month;
+@property (readonly) NSInteger ob_week;
+@property (readonly) NSInteger ob_weekday;
+@property (readonly) NSInteger ob_nthWeekday; // e.g. 2nd Tuesday of the month == 2
+@property (readonly) NSInteger ob_year;
 
 @end
