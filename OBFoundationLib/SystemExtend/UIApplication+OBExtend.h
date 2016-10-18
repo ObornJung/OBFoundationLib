@@ -10,12 +10,12 @@
 
 @interface UIApplication (OBExtend)
 
-+ (NSString *)ob_bundleId;
-
 + (NSString *)ob_appName;
+
++ (NSString *)ob_bundleId;
 
 + (NSString *)ob_shortVersion;
 
-+ (NSString *)ob_detailVersion;
++ (NSString *)ob_buildVersion;
 
 @end
