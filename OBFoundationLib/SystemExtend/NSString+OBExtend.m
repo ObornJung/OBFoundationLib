@@ -26,7 +26,7 @@
     return  md5Str;
 }
 
-- (NSString *)ob_phoneNumberRegularization:(NSString *)phoneNumber{
+- (NSString *)ob_phoneNumberRegularization:(NSString *)phoneNumber {
     
     NSString *result = nil;
     result=[phoneNumber stringByReplacingOccurrencesOfString:@"<" withString:@""];
@@ -42,7 +42,7 @@
                                         options:NSStringDrawingUsesLineFragmentOrigin
                                      attributes:@{NSFontAttributeName:font}
                                         context:nil].size.height;
-    return (height + 2);
+    return (height + 2.0f);
 }
 
 @end

@@ -12,8 +12,9 @@
 
 + (instancetype)ob_dictionaryWithJsonContentFile:(NSString *)fileName {
     if (fileName.length > 0) {
-        NSData * JSONData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:@""]];
-        return [NSJSONSerialization JSONObjectWithData:JSONData options:0 error:nil];
+        NSString * filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@""];
+        NSData * data = [NSData dataWithContentsOfFile:filePath];
+        return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     }
     return nil;
 }
@@ -26,41 +27,31 @@
 - (NSDictionary *)ob_deepCopy {
     
     NSMutableDictionary * copyDict = [[NSMutableDictionary alloc] initWithCapacity:[self count]];
-    
-    for(id key in [self allKeys])
-    {
+    for (id key in [self allKeys]) {
         id value = [self objectForKey:key];
-        id copyValue;
+        id copyValue = value;
         if ([value respondsToSelector:@selector(ob_deepCopy)]) {
             copyValue = [value ob_deepCopy];
         } else if ([value respondsToSelector:@selector(copyWithZone:)]) {
             copyValue = [value copy];
-        }
-        if(copyValue==nil) {
-            copyValue = value;
         }
         copyDict[key] = copyValue;
     }
     return [copyDict copy];
 }
 
-- (NSMutableDictionary *)ob_mutableDeepCopy
-{
-    NSMutableDictionary * copyDict = [[NSMutableDictionary alloc] initWithCapacity:[self count]];
+- (NSMutableDictionary *)ob_mutableDeepCopy {
     
-    for(id key in [self allKeys])
-    {
+    NSMutableDictionary * copyDict = [[NSMutableDictionary alloc] initWithCapacity:[self count]];
+    for (id key in [self allKeys]) {
         id value = [self objectForKey:key];
-        id copyValue;
+        id copyValue = value;
         if ([value respondsToSelector:@selector(ob_mutableDeepCopy)]) {
             copyValue = [value ob_mutableDeepCopy];
         } else if ([value respondsToSelector:@selector(mutableCopyWithZone:)]) {
             copyValue = [value mutableCopy];
         } else if ([value respondsToSelector:@selector(copyWithZone:)]) {
             copyValue = [value copy];
-        }
-        if(copyValue==nil) {
-            copyValue = value;
         }
         copyDict[key] = copyValue;
     }

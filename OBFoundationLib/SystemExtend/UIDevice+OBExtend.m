@@ -33,8 +33,7 @@
     BOOL jailbroken = NO;
     if ([[NSFileManager defaultManager] fileExistsAtPath:@"/Applications/Cydia.app"]) {
         jailbroken = YES;
-    }
-    if ([[NSFileManager defaultManager] fileExistsAtPath:@"/private/var/lib/apt/"]) {
+    } else if ([[NSFileManager defaultManager] fileExistsAtPath:@"/private/var/lib/apt/"]) {
         jailbroken = YES;
     }
     return jailbroken;
@@ -86,7 +85,7 @@
         if (![phoneNumber hasPrefix:@"tel://"]) {
             schemePhoneNumber = [NSString stringWithFormat:@"tel://%@", schemePhoneNumber];
         }
-        NSURL *telePhoneUrl = [NSURL URLWithString:schemePhoneNumber];
+        NSURL * telePhoneUrl = [NSURL URLWithString:schemePhoneNumber];
         if ([[UIApplication sharedApplication] canOpenURL:telePhoneUrl]) {
             [[UIApplication sharedApplication] openURL:telePhoneUrl];
             return YES;

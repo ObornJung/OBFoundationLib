@@ -31,6 +31,17 @@ if ([NSThread isMainThread]) {\
 #endif
 
 /**
+ *    macro ignored -Wobjc-method-access warning
+ */
+#define OBSuppressMethodAccessWarning(Stuff) \
+do {\
+    _Pragma("clang diagnostic push")\
+    _Pragma("clang diagnostic ignored\"-Wobjc-method-access\"")\
+    Stuff;\
+    _Pragma("clang diagnostic pop") \
+} while(0)
+
+/**
  *    系统版本判断宏
  */
 #define OBSYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
@@ -42,6 +53,6 @@ if ([NSThread isMainThread]) {\
 /**
  *    浮点数相等判断
  */
-#define OBFLOAT_EQUAL(a, b) (fabs(a-b) < FLT_EPSILON)
+#define OBFLOAT_EQUAL(a, b) (fabs((a)-(b)) < FLT_EPSILON)
 
 #endif /* OBToolsMacro_h */

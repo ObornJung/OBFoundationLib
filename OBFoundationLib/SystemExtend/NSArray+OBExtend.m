@@ -12,30 +12,25 @@
 
 - (NSArray *)ob_deepCopy {
     
-    NSMutableArray * copyArray = [[NSMutableArray alloc] initWithCapacity:[self count]];
-    
-    for(id value in self)
-    {
-        id copyValue;
+    NSMutableArray * copyArray = [self mutableCopy];
+    [self enumerateObjectsUsingBlock:^(id value, NSUInteger idx, BOOL * stop) {
+        id copyValue = nil;
         if ([value respondsToSelector:@selector(ob_deepCopy)]) {
-            copyValue = [value ob_deepCopy];
+            copyArray[idx] = [value ob_deepCopy];
         } else if ([value respondsToSelector:@selector(copyWithZone:)]) {
-            copyValue = [value copy];
+            copyArray[idx] = [value copy];
         }
-        if(copyValue==nil) {
-            copyValue = value;
+        if(copyValue!=nil) {
+            copyArray[idx] = copyValue;
         }
-        [copyArray addObject:copyValue];
-    }
+    }];
     return [copyArray copy];
 }
 
-- (NSMutableArray *)ob_mutableDeepCopy
-{
-    NSMutableArray * copyArray = [[NSMutableArray alloc] initWithCapacity:[self count]];
+- (NSMutableArray *)ob_mutableDeepCopy {
     
-    for(id value in self)
-    {
+    NSMutableArray * copyArray = [self mutableCopy];
+    [self enumerateObjectsUsingBlock:^(id value, NSUInteger idx, BOOL * stop) {
         id copyValue;
         if ([value respondsToSelector:@selector(ob_mutableDeepCopy)]) {
             copyValue = [value ob_mutableDeepCopy];
@@ -44,11 +39,10 @@
         } else if ([value respondsToSelector:@selector(copyWithZone:)]) {
             copyValue = [value copy];
         }
-        if(copyValue==nil) {
-            copyValue = value;
+        if(copyValue!=nil) {
+            copyArray[idx] = copyValue;
         }
-        [copyArray addObject:copyValue];
-    }
+    }];
     return copyArray;
 }
 
