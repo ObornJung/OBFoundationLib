@@ -169,7 +169,6 @@
 			children = (
 				373953971C180775007BB2D9 /* OBMoudle.h */,
 				373953921C180761007BB2D9 /* LogFile */,
-				373953991C18078B007BB2D9 /* OpenUDID */,
 				3739539E1C1807AC007BB2D9 /* FileManager */,
 			);
 			path = Moudle;
@@ -191,6 +190,7 @@
 				373953791C180733007BB2D9 /* NSDictionary+OBExtend.m */,
 				3739537F1C180733007BB2D9 /* UIApplication+OBExtend.h */,
 				373953801C180733007BB2D9 /* UIApplication+OBExtend.m */,
+				373953991C18078B007BB2D9 /* OpenUDID */,
 			);
 			path = SystemExtend;
 			sourceTree = "<group>";

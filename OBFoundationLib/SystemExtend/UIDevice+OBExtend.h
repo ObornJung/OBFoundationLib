@@ -15,24 +15,28 @@
  *  @return 设备UDID
  */
 + (NSString *)ob_UDID;
+
 /**
  *  获取设备总内存，单位:M
  *
  *  @return 设备总内存
  */
 + (double)ob_realMemory;
+
 /**
  *  获取设备当前使用内存，单位:M
  *
  *  @return 设备当前使用内存
  */
 + (double)ob_usedMemory;
+
 /**
  *  获取设备是否越狱
  *
  *  @return 设备是否越狱
  */
 + (BOOL)ob_isJailBreak;
+
 /**
  *  开关手电筒
  *

@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
 
     s.subspec 'Moudle' do |ss|
         ss.dependency 'OBFoundationLib/Macro'
+        ss.dependency 'OBFoundationLib/SystemExtend'
         ss.source_files = 'OBFoundationLib/Moudle/**/*.{m,h}'
         ss.public_header_files = 'OBFoundationLib/Moudle/**/*.h'
     end

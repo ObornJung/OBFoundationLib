@@ -57,8 +57,8 @@
 #define kOBOpenUDIDErrorCompromised   2
 
 @interface OBOpenUDID : NSObject
-+ (NSString*) value;
-+ (NSString*) valueWithError:(NSError**)error;
-+ (void) setOptOut:(BOOL)optOutValue;
++ (NSString *)value;
++ (NSString *)valueWithError:(NSError**)error;
++ (void)setOptOut:(BOOL)optOutValue;
 
 @end
