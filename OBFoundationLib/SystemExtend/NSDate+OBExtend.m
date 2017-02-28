@@ -134,8 +134,8 @@ static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMon
 }
 
 - (BOOL)ob_isSameYearWithDate:(NSDate *)date {
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:date];
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:date];
     return ([components1 year] == [components2 year]);
 }
 
@@ -185,9 +185,6 @@ static const NSUInteger kDateComponents = (NSCalendarUnitYear| NSCalendarUnitMon
     [components setSecond:0];
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
-
-
-
 
 - (NSInteger)ob_nearestHour {
     NSTimeInterval interval = [[NSDate date] timeIntervalSinceReferenceDate] + kSecondsPerHour * 0.5;
